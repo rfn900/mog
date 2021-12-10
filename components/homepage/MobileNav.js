@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { AppButton } from './AppButton'
 import { RiFacebookFill } from 'react-icons/ri'
 import { FiInstagram } from 'react-icons/fi'
@@ -18,7 +19,13 @@ export default function MobileNav({ menuOpen, setMenuOpen }) {
     >
       <div className="flex pr-4 gap-4">
         <div className="h-16 w-16 bg-white rounded-full p-2 shadow-lg">
-          <img src="/Mog_Logo.png" alt="Logo mini version" />
+          <Image
+            src="/MOG_logo.png"
+            width={300}
+            height={300}
+            objectFit="contain"
+            alt="logo"
+          />
         </div>
       </div>
       <div className="h-px bg-gray-200 mt-4 text-gray-100"></div>
