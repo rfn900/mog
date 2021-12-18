@@ -74,8 +74,8 @@ function Nav() {
         />
       </div>
       <div
-        className={`fixed top-0 -left-0 z-40 transform transition duration-700 w-screen h-screen bg-gray-50 ${
-          menuOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`fixed top-0 -left-0 z-40 left-full transform transition duration-700 w-screen h-screen bg-gray-50 ${
+          menuOpen ? '-translate-x-full' : 'translate-x-0'
         }`}
       >
         <MobileNav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />

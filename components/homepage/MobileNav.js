@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Image from 'next/image'
 import { AppButton } from './AppButton'
 import { RiFacebookFill } from 'react-icons/ri'
@@ -19,25 +20,35 @@ export default function MobileNav({ menuOpen, setMenuOpen }) {
     >
       <div className="flex pr-4 gap-4">
         <div className="h-16 w-16 bg-white rounded-full p-2 shadow-lg">
-          <Image
-            src="/MOG_logo.png"
-            width={300}
-            height={300}
-            objectFit="contain"
-            alt="logo"
-          />
+          <Link href="/">
+            <a>
+              <Image
+                src="/MOG_logo.png"
+                width={300}
+                height={300}
+                objectFit="contain"
+                alt="logo"
+              />
+            </a>
+          </Link>
         </div>
       </div>
       <div className="h-px bg-gray-200 mt-4 text-gray-100"></div>
       <div className="flex flex-col py-8 text-gray-400 px-2 gap-4">
         <div className="text-xl p-2">
-          <a href="/about">About Us</a>
+          <Link href="/about">
+            <a>About Us</a>
+          </Link>
         </div>
         <div className="text-xl p-2">
-          <a href="/case-study">Case Study</a>
+          <Link href="/case-study">
+            <a>Case Study</a>
+          </Link>
         </div>
         <div className="text-xl p-2">
-          <a href="/dashboard">Admin</a>
+          <Link href="/dashboard">
+            <a>Admin</a>
+          </Link>
         </div>
         <AppButton
           text="Contact Us"

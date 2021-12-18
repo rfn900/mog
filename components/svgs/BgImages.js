@@ -5262,9 +5262,9 @@ export default function BgImages({ fillColor }) {
           data-name="SEE MORE"
           transform="translate(1309 2721)"
           fill="#fff"
-          font-size="12"
-          font-family="Poppins-Medium, Poppins"
-          font-weight="500"
+          fontSize="12"
+          fontFamily="Poppins-Medium, Poppins"
+          fontWeight="500"
         >
           <tspan x="0" y="0">
             SEE MORE
